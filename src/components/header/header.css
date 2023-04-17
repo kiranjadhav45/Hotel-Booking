@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-bottom: 20px;
 }
 .headerListItem {
   display: flex;
@@ -33,7 +34,7 @@
 .headerSearch {
   height: 30px;
   background-color: #ffffff;
-  border: 3px solid yellow;
+  border: 3px solid #febb02;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -60,6 +61,7 @@
   position: absolute;
   top: 50px;
   left: 260px;
+  z-index: 2;
 }
 .option {
   position: absolute;
@@ -68,6 +70,7 @@
   color: gray;
   padding: 10px;
   border-radius: 5px;
+  z-index: 2;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 .optionItem {
@@ -95,4 +98,11 @@
   cursor: pointer;
   background-color: #003580;
   color: #ffffff;
+}
+.optionCounterButton :disabled {
+  /* color: red; */
+  cursor: not-allowed;
+}
+.headerDesc {
+  margin-bottom: 20px;
 }
